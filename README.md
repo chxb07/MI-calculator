@@ -36,5 +36,5 @@ This calculator is specifically designed for **first-year LMD students** and fol
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript 
 - LocalStorage API
