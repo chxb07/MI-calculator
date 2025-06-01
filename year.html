@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year Average Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calculator.css">
+    <style>
+        .year-table {
+            background-color: #1a1a2e;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            color: white;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+        
+        .year-table-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: #16213e;
+            padding: 0.8rem 0.5rem;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #30475e;
+        }
+        
+        .year-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 0.8rem 0.5rem;
+            text-align: center;
+            align-items: center;
+            border-bottom: 1px solid #30475e;
+        }
+        
+        .year-total-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 0.8rem 0.5rem;
+            text-align: center;
+            align-items: center;
+            background-color: #16213e;
+            font-weight: bold;
+        }
+        
+        .calculator-form {
+            background-color: #1a1a2e;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .result {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #16213e;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+        }
+        
+        .result h2 {
+            color: white;
+        }
+        
+        #year-average {
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Year Average Calculator</h1>
+        
+        <div class="year-table">
+            <div class="year-table-header">
+                <div>Semestre/année</div>
+                <div>Moyenne</div>
+                <div>Crédits</div>
+            </div>
+            
+            <div class="year-row">
+                <div>Semestre 1</div>
+                <div id="semester1-average">0</div>
+                <div id="semester1-credits">0</div>
+            </div>
+            
+            <div class="year-row">
+                <div>Semestre 2</div>
+                <div id="semester2-average">0</div>
+                <div id="semester2-credits">0</div>
+            </div>
+            
+            <div class="year-total-row">
+                <div>Année</div>
+                <div id="year-average">0</div>
+                <div id="year-credits">0</div>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button id="calculate-year" class="btn primary">Calculate Year Average</button>
+            <a href="index.html" class="back-btn">Back to Home</a>
+        </div>
+    </div>
+    <script src="year-calculator.js"></script>
+</body>
+</html>

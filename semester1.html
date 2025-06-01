@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 1 Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="semester.css">
+</head>
+<body>
+    <div class="container">
+        <div class="semester-table">
+            <div class="semester-header">
+                <h1>Semestre 1</h1>
+            </div>
+            
+            <div class="table-header">
+                <div class="module-col">Modules</div>
+                <div class="coef-col">Coef</div>
+                <div class="cred-col">Créd</div>
+                <div class="note-col-header">
+                    <span>TD</span>
+                    <span>TP</span>
+                    <span>Exam</span>
+                </div>
+                <div class="moyenne-col">Moyenne Module</div>
+                <div class="cred-mod-col">Créd Mod</div>
+            </div>
+            
+            <!-- Module rows -->
+            <!-- For Analyse module -->
+            <div class="module-row">
+                <div class="module-col">Analyse</div>
+                <div class="coef-col">4</div>
+                <div class="cred-col">6</div>
+                <div class="note-col two-inputs">
+                    <input type="number" class="note-input td-input" min="0" max="20" step="0.01">
+                    <input type="number" class="note-input exam-input" min="0" max="20" step="0.01">
+                </div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+
+            <!-- For Algèbre module -->
+            <div class="module-row">
+                <div class="module-col">Algèbre</div>
+                <div class="coef-col">3</div>
+                <div class="cred-col">5</div>
+                <div class="note-col two-inputs">
+                    <input type="number" class="note-input td-input" min="0" max="20" step="0.01">
+                    <input type="number" class="note-input exam-input" min="0" max="20" step="0.01">
+                </div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="unit-row">
+                <div class="module-col">Unité Fondamentale1</div>
+                <div class="coef-col">7</div>
+                <div class="cred-col">11</div>
+                <div class="note-col"></div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="module-row">
+                <div class="module-col">Algorithmique Et Structure De Données</div>
+                <div class="coef-col">4</div>
+                <div class="cred-col">6</div>
+                <div class="note-col">
+                    <input type="number" class="note-input td-input" min="0" max="20" step="0.01">
+                    <input type="number" class="note-input tp-input" min="0" max="20" step="0.01">
+                    <input type="number" class="note-input exam-input" min="0" max="20" step="0.01">
+                </div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="module-row">
+                <div class="module-col">Structure Machine 1</div>
+                <div class="coef-col">3</div>
+                <div class="cred-col">5</div>
+                <div class="note-col two-inputs">
+                    <input type="number" class="note-input td-input" min="0" max="20" step="0.01">
+                    <input type="number" class="note-input exam-input" min="0" max="20" step="0.01">
+                </div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="unit-row">
+                <div class="module-col">Unité Fondamentale2</div>
+                <div class="coef-col">7</div>
+                <div class="cred-col">11</div>
+                <div class="note-col"></div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="module-row">
+                <div class="module-col">Terminologie Scientifique Et Expression Écrite</div>
+                <div class="coef-col">1</div>
+                <div class="cred-col">2</div>
+                <div class="note-col">
+                    <input type="number" class="note-input exam-input full-width" min="0" max="20" step="0.01">
+                </div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="module-row">
+                <div class="module-col">Langue Étrangère 1</div>
+                <div class="coef-col">1</div>
+                <div class="cred-col">2</div>
+                <div class="note-col">
+                    <input type="number" class="note-input exam-input full-width" min="0" max="20" step="0.01">
+                </div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="unit-row">
+                <div class="module-col">Unité Méthodologique</div>
+                <div class="coef-col">2</div>
+                <div class="cred-col">4</div>
+                <div class="note-col"></div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="module-row">
+                <div class="module-col">electronique et composants des systèmes</div>
+                <div class="coef-col">2</div>
+                <div class="cred-col">4</div>
+                <div class="note-col">
+                    <input type="number" class="note-input td-input" min="0" max="20" step="0.01">
+                    <input type="number" class="note-input exam-input" min="0" max="20" step="0.01">
+                </div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="unit-row">
+                <div class="module-col">Unité Découverte</div>
+                <div class="coef-col">2</div>
+                <div class="cred-col">4</div>
+                <div class="note-col"></div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+            
+            <div class="semester-total-row">
+                <div class="module-col">Semestre S1</div>
+                <div class="coef-col">18</div>
+                <div class="cred-col">30</div>
+                <div class="note-col"></div>
+                <div class="moyenne-col">0</div>
+                <div class="cred-mod-col">0</div>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button id="calculate" class="btn primary">Calculate</button>
+            <a href="index.html" class="back-btn">Back to Home</a>
+        </div>
+    </div>
+    <script src="semester1.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
