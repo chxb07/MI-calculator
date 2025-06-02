@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="calculator.css">
     <style>
         .year-table {
-            background-color: #1a1a2e;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-strong);
             overflow: hidden;
-            color: white;
+            color: var(--dark);
             margin-bottom: 2rem;
             width: 100%;
         }
@@ -20,57 +20,64 @@
         .year-table-header {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            background-color: #16213e;
-            padding: 0.8rem 0.5rem;
+            background-color: var(--gray-dark);
+            padding: 1rem 0.5rem;
             font-weight: bold;
             text-align: center;
-            border-bottom: 1px solid #30475e;
+            color: white;
         }
         
         .year-row {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            padding: 0.8rem 0.5rem;
+            padding: 1rem 0.5rem;
             text-align: center;
             align-items: center;
-            border-bottom: 1px solid #30475e;
+            border-bottom: 1px solid var(--gray-light);
+            background-color: #f8f9fa;
+        }
+        
+        .year-row:nth-child(even) {
+            background-color: #f1f3f5;
         }
         
         .year-total-row {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            padding: 0.8rem 0.5rem;
+            padding: 1rem 0.5rem;
             text-align: center;
             align-items: center;
-            background-color: #16213e;
+            background-color: var(--primary);
+            color: white;
             font-weight: bold;
         }
         
         .calculator-form {
-            background-color: #1a1a2e;
-            border-radius: 10px;
+            background-color: white;
+            border-radius: var(--border-radius);
             padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            color: white;
+            box-shadow: var(--shadow-strong);
             margin-bottom: 2rem;
         }
         
         .result {
             margin-top: 2rem;
-            padding: 1rem;
-            background-color: #16213e;
-            border-radius: 5px;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: var(--border-radius);
             text-align: center;
-            color: white;
+            box-shadow: var(--shadow);
         }
         
         .result h2 {
-            color: white;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
         }
         
         #year-average {
-            color: #3498db;
+            color: var(--primary);
             font-weight: bold;
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -112,3 +119,4 @@
     <script src="year-calculator.js"></script>
 </body>
 </html>
+
